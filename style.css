@@ -52,10 +52,10 @@ table {
 
 /*----------ROOT VARIABLES----------*/
 :root{
-	--font-body: "habibi", "verdana", "sans-serif";
+	--font-family: "habibi", "serif";
+	--font-size: 1.25em;
 
-	--font-heading: "irish grover", "sans-serif",
-
+	--font-heading: "irish grover";
 	--h1:2.5em;
 	--h2:1.75em;
 	--h3: 1.25em;
@@ -69,6 +69,22 @@ table {
 
 
 /*----------GLOBAL STYLES (mobile first/small)----------*/
+body{
+	min-width: 428px;
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+	display: grid;
+	grid-template-columns: 1fr;
+	
+
+header footer{
+	width: 100%;
+	background-color: var(--green);
+
+}
+
+}
 
 /*----------MEDIA QUERY (medium)-----------*/
 
