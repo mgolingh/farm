@@ -69,13 +69,12 @@ table {
 
 
 /*----------GLOBAL STYLES (mobile first/small)----------*/
-body{
+*body{
 	min-width: 428px;
-	box-sizing: border-box;
 	margin: 0;
 	padding:0;
-	display: grid;
-	grid-template-columns: 1fr;
+	display: flex;
+	background-color:blueviolet
 }
 
 header, footer{
@@ -95,6 +94,12 @@ nav a{
 	color:#ffffff;	
 }
 
+#fruit{
+	display:grid;
+	grid-template-columns: 1fr;
+	padding: 0;
+
+}
 
 
 
