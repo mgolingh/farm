@@ -76,11 +76,16 @@ body{
 	padding:0;
 	display: grid;
 	grid-template-columns: 1fr;
+
+nav li {
+	list-style: none;
+	background-color: var(--orange);
+}
 	
 
 header footer{
 	width: 100%;
-	background-color: var(--green);
+	background-color:var(--green);
 
 }
 
