@@ -69,13 +69,13 @@ table {
 
 
 /*----------GLOBAL STYLES (mobile first/small)----------*/
-*body{
+body{
 	min-width: 428px;
 	margin: 0;
 	padding:0;
-	display: grid;
-	grid-template-columns: 1fr;
-	background-color:blueviolet
+	display: flex;
+	flex-direction: column;
+	background-color:blueviolet;
 }
 
 header, footer{
