@@ -52,8 +52,8 @@ table {
 
 /*----------ROOT VARIABLES----------*/
 :root{
-	--font-family: "habibi", "serif";
-	--font-size: 1.25em;
+	font-family: "habibi", "serif";
+	font-size: 1.25em;
 
 	--font-heading: "irish grover";
 	--h1:2.5em;
@@ -76,20 +76,27 @@ body{
 	padding:0;
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+header, footer{
+		width: 100%;
+		background-color:var(--green);
+	
+	}
 
 nav li {
 	list-style: none;
-	background-color: var(--orange);
 }
 	
-
-header footer{
-	width: 100%;
-	background-color:var(--green);
-
+nav a{
+	text-decoration: none;
+	background-color: var(--orange);
+	display: block;
+	color:#ffffff;	
 }
 
-}
+
+
 
 /*----------MEDIA QUERY (medium)-----------*/
 
