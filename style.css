@@ -73,7 +73,8 @@ table {
 	min-width: 428px;
 	margin: 0;
 	padding:0;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
 	background-color:blueviolet
 }
 
