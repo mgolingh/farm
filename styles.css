@@ -69,27 +69,39 @@ table {
 
 
 /*----------GLOBAL STYLES (mobile first/small)----------*/
-*{
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
-}
-		html{background-color:#ffffff
+*
+		html{background-color:#000000;
 			}
 
 		body{
 			min-width:428px;
-			font-family: "habibi", "serif";
 			}
 
-		header footer{
+		header, footer{
 			width:100%;
-			background-color:green;
-		}
+			background-color:var(--green);
+			}
 
-		nav li{
-			list-style-type: none;
-		}
+		header P, h1{
+			text-align: center;
+			color:var(--white)
+			}
+
+		header h1{
+			font-family: irish grover;
+			font-size: 2.5em;
+			text-align:center;
+			}
+
+			header p{
+				font-style: italic;
+			}
+
+		nav{
+			display:block;
+			padding-inline-start: 60px;
+			padding-inline-end: 60px;
+			}
 
 		nav a{
 			text-decoration: none;
@@ -97,17 +109,94 @@ table {
 			background-color: orange;
 			display: block;
 			color:#ffffff;
+			margin:10px;
+			padding:10px;
+			border:10px;
+			}
+
+		nav h2{
+			visibility: hidden;
+			height:1px;
+			}
+
+		nav ul{
+			display:grid;
+			grid-template-columns: 1fr ;
 		}
 
-		header h1{
+		nav li{
+			list-style-type: none;
+		}
+
+		h1, h2, h3, p, img{
+			padding:10px;
+		}
+
+		h2{
 			font-family: irish grover;
+			font-size: 1.75em;
+		}
+
+		h3{
+				font-family: irish grover;
+				font-size: 1.25em;
+		}
+
+		p a{
+			line-height: 1.25em;
 		}
 		
+		#fruitsale{
+			margin:10px;
+			padding:10px;
+			display:grid;
+			grid-template-columns:1fr;
+			text-align: center;
+			}
+	
+		figcaption{
+			background-color:#000000;
+			color:#ffffff;
+			text-align:center;
+			padding:10px;
+			position: center;
+			opacity: 0.75;
+			
+			}
 		
-	
-	
-	
+		#vegetablesale{
+			margin:10px;
+			padding:10px;
+			display:grid;
+			grid-template-columns:1fr;
+			text-align: center;
+		}
 
+		footer{
+			text-align: center;
+			color:var(--white);
+			line-height: 1.50em;
+		}
+
+		#contactinfo{
+			padding:50px;
+			border:30px;
+		}
+
+		#hours{
+			padding: 0px;
+			border:20px;
+		}
+
+		small{
+			display:inline-block;
+			background-color: var(--white);
+			color:var(--green);
+			width:100%;
+			padding:20px;
+			text-align:center;
+			font-weight: bold;
+		}
 
 
 
