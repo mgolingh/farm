@@ -69,34 +69,44 @@ table {
 
 
 /*----------GLOBAL STYLES (mobile first/small)----------*/
-{
-	@media (min-width: 428px){
-		body{
-			display:grid;
-			grid-template-columns: 1fr;
-			background-color: #000000;
-		}
-	
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+		html{background-color:#ffffff
+			}
 
-		header{
+		body{
+			min-width:428px;
+			font-family: "habibi", "serif";
+			}
+
+		header footer{
 			width:100%;
-			display: block;
 			background-color:green;
-			font-family: habibi;
 		}
-		
+
+		nav li{
+			list-style-type: none;
+		}
+
 		nav a{
-			position: center;
 			text-decoration: none;
-			display: grid;
-			grid-template-columns: 1fr;
+			text-align: center;
 			background-color: orange;
+			display: block;
+			color:#ffffff;
 		}
-	
-	nav p{
+
+		header h1{
+			font-family: irish grover;
+		}
 		
-	}
-	}		
+		
+	
+	
+}		
 
 
 
