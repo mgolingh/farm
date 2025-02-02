@@ -155,13 +155,13 @@ table {
 			}
 	
 		figcaption{
+			
+			width:150px;
 			background-color:#000000;
 			color:#ffffff;
 			text-align:center;
 			padding:10px;
-			position: center;
 			opacity: 0.75;
-			
 			}
 		
 		#vegetablesale{
@@ -173,7 +173,10 @@ table {
 		}
 
 		footer{
+			display:grid;
+			grid-template-columns: 1fr;
 			text-align: center;
+			align-self: center;
 			color:var(--white);
 			line-height: 1.50em;
 		}
@@ -186,8 +189,25 @@ table {
 		#hours{
 			padding: 0px;
 			border:20px;
+			display:grid;
+			grid-template-columns: 1fr;
+			align-items: center;
 		}
 
+		div{
+			align-items: center;
+			display:grid;
+			grid-template-columns: 1fr;
+		}
+
+		nav #top{
+			float:bottom;
+			display:block;
+			width:75px;
+			color:var(--white);
+			background-color: var(--orange);
+		}
+	
 		small{
 			display:inline-block;
 			background-color: var(--white);
@@ -198,7 +218,7 @@ table {
 			font-weight: bold;
 		}
 
-
+		
 
 /*----------MEDIA QUERY (medium)-----------*/
 
