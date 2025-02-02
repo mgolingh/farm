@@ -75,6 +75,8 @@ table {
 
 		body{
 			min-width:428px;
+			display:grid;
+			grid-template-columns: 1fr;
 			}
 
 		header, footer{
@@ -94,7 +96,7 @@ table {
 			}
 
 			header p{
-				font-style: italic;
+			font-style: italic;
 			}
 
 		nav{
@@ -114,6 +116,15 @@ table {
 			border:10px;
 			}
 
+		#top{
+			position:sticky;
+			right:25%;
+			bottom: 5%;
+			display:block;
+			width:75px;
+			color:var(--white);
+			background-color: var(--orange);
+		}
 		nav h2{
 			visibility: hidden;
 			height:1px;
@@ -149,13 +160,15 @@ table {
 		#fruitsale{
 			margin:10px;
 			padding:10px;
-			display:grid;
-			grid-template-columns:1fr;
+			
 			text-align: center;
 			}
 	
-		figcaption{
-			
+		img~figcaption{
+			display:box;
+			position:relative;
+			bottom:175px;
+			left:110px;
 			width:150px;
 			background-color:#000000;
 			color:#ffffff;
@@ -167,8 +180,6 @@ table {
 		#vegetablesale{
 			margin:10px;
 			padding:10px;
-			display:grid;
-			grid-template-columns:1fr;
 			text-align: center;
 		}
 
@@ -188,24 +199,22 @@ table {
 
 		#hours{
 			padding: 0px;
-			border:20px;
+			border:30px;
 			display:grid;
-			grid-template-columns: 1fr;
-			align-items: center;
+			
 		}
 
 		div{
-			align-items: center;
 			display:grid;
 			grid-template-columns: 1fr;
+			padding:0px;
+			
+			
 		}
 
-		nav #top{
-			float:bottom;
-			display:block;
-			width:75px;
-			color:var(--white);
-			background-color: var(--orange);
+		dl>dd{
+			justify-content: space-around;
+			
 		}
 	
 		small{
