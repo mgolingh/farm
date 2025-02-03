@@ -100,7 +100,8 @@ table {
 			}
 
 		nav{
-			display:block;
+			display:grid;
+			grid-template-columns:1fr;
 			padding-inline-start: 60px;
 			padding-inline-end: 60px;
 			}
@@ -116,8 +117,9 @@ table {
 			border:10px;
 			}
 
-		#top{
-			position:sticky;
+		nav #top{
+			
+			position:relative;
 			right:25%;
 			bottom: 5%;
 			display:block;
