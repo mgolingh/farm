@@ -117,7 +117,7 @@ table {
 			border:10px;
 			}
 
-		nav #top{
+		#top{
 			
 			position:relative;
 			right:25%;
@@ -169,8 +169,8 @@ table {
 		img~figcaption{
 			display:box;
 			position:relative;
-			bottom:175px;
-			left:110px;
+			bottom:9em;
+			left:5em;
 			width:150px;
 			background-color:#000000;
 			color:#ffffff;
