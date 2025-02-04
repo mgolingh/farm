@@ -233,7 +233,7 @@ table {
 
 /*----------MEDIA QUERY (medium)-----------*/
 @media screen and (min-width:831px){
-	nav{
+	nav ul{
 		display:grid;
 		grid-template-columns:1fr 1fr;
 	}
@@ -263,6 +263,15 @@ table {
 	grid-template-columns: 1fr 1fr;
 	grid-column-start: 1;
 	grid-column-end: 3;
+}
+
+footer #contactinfo #hours{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+
 /*----------MEDIA QUERY (large)----------*/
 @media screen and (min-width:1280px){
 
