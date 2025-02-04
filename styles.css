@@ -110,7 +110,8 @@ table {
 			text-decoration: none;
 			text-align: center;
 			background-color: orange;
-			display: block;
+			display: grid;
+			grid-template-columns: 1fr;
 			color:#ffffff;
 			margin:10px;
 			padding:10px;
@@ -162,7 +163,6 @@ table {
 		#fruitsale{
 			margin:10px;
 			padding:10px;
-			
 			text-align: center;
 			}
 	
@@ -232,9 +232,42 @@ table {
 		
 
 /*----------MEDIA QUERY (medium)-----------*/
+@media screen and (min-width:831px){
+	nav{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+	}
+	
+	#fruit{
+		display:flexbox;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+		
+	#fruitsale{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-template-rows: auto;
+	}
 
+	img~figcaption{
+		position:relative;
+		bottom:9em;
+		left:9em;
+}
+
+#vegetablesale{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-start: 1;
+	grid-column-end: 3;
 /*----------MEDIA QUERY (large)----------*/
+@media screen and (min-width:1280px){
 
+}
 /*----------MEDIA QUERY (xl)-----------*/
+@media screen and (min-width:1440px){
 
-
+}
