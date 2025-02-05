@@ -102,8 +102,9 @@ table {
 		nav{
 			display:flex;
 			flex-direction: column;
-			padding-inline-start: 60px;
+			padding-inline-start: 30px;
 			padding-inline-end: 60px;
+			margin:2em;
 			}
 
 		nav a{
@@ -115,17 +116,17 @@ table {
 			color:#ffffff;
 			margin:10px;
 			padding:10px;
-			border:10px;
+			border:20px;
 			}
 
 		nav .totop{
 			
-			position:relative;
+			position:fixed;
 			right:2rem;
 			bottom: 2rem;
 			z-index: 1;
-			
-		}
+			}
+
 		nav h2{
 			visibility: hidden;
 			height:1px;
@@ -134,31 +135,35 @@ table {
 		
 		h1, h2, h3, p, img{
 			padding:10px;
-		}
+			}
 
 		h2{
 			font-family: irish grover;
 			font-size: 1.75em;
-		}
+			}
 
 		h3{
 				font-family: irish grover;
 				font-size: 1.25em;
-		}
+			}
 
 		p a{
 			line-height: 1.25em;
+			}
+		
+		main{
+			display: flex;
+			flex-direction:column;
 		}
-
 		figure{
 			display:grid;
 			grid-template-areas: 1fr;
-
-		}
+			}
 		
 		#fruitsale{
 			margin:10px;
 			padding:10px;
+			gap:2em;
 			text-align: center;
 			}
 	
@@ -231,6 +236,19 @@ table {
 /*----------MEDIA QUERY (medium)-----------*/
 @media screen and (min-width:831px){
 
+	header{
+		display:flex;
+		flex-direction: row;
+	}
+
+	header>p{
+		align-content: center;
+		
+		position:relative;
+		left: 6em;
+		
+	}
+
 	nav ul{
 		display:grid;
 		grid-template-columns:1fr 1fr;
@@ -249,6 +267,7 @@ table {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		text-align: center;
+		align-self: center;
 		
 	}
 
